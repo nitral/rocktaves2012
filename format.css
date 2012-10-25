@@ -41,19 +41,7 @@ a
 
 #titleBanner:hover
 {
-	text-shadow: 5px 5px 10px #FF0000;
-			-moz-animation-name: rotate;
-	        -moz-animation-duration: 2s;
-	        -moz-animation-iteration-count: infinite;
-	        -moz-transform-origin: 0 50%;
-            -ms-animation-name: rotate;
-	        -ms-animation-duration: 2s;
-	        -ms-animation-iteration-count: infinite;
-	        -ms-transform-origin: 0 50%;
-	        -webkit-animation-name: rotate;
-	        -webkit-animation-duration: 2s;
-	        -webkit-animation-iteration-count: infinite;
-	        -webkit-transform-origin: 0 50%; 	        
+	text-shadow: 5px 5px 10px #FF0000;        
 }
 
 .navColumn
@@ -121,28 +109,16 @@ a
 
 #about:hover
 {
-transform:rotate(1deg);
--ms-transform:rotate(1deg); /* IE 9 */
--moz-transform:rotate(1deg); /* Firefox */
--webkit-transform:rotate(1deg); /* Safari and Chrome */
--o-transform:rotate(1deg); /* Opera */;
+
 }
 #rules:hover
 {
-transform:rotate(1deg);
--ms-transform:rotate(1deg); /* IE 9 */
--moz-transform:rotate(1deg); /* Firefox */
--webkit-transform:rotate(1deg); /* Safari and Chrome */
--o-transform:rotate(1deg); /* Opera */;
+
 }
 
 #participate:hover
 {
-transform:rotate(1deg);
--ms-transform:rotate(1deg); /* IE 9 */
--moz-transform:rotate(1deg); /* Firefox */
--webkit-transform:rotate(1deg); /* Safari and Chrome */
--o-transform:rotate(1deg); /* Opera */;
+
 }
 
 .clearDiv
