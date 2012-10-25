@@ -1,76 +1,79 @@
-<!-- -------------------
-Rocktaves | Oasis - 2012
--------------------- -->
-
+<!-- Rocktaves | Oasis - 2012 -->
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Rocktaves | Oasis - 2012</title>
-		<!-- CSS File Link for Formatting HTML Document. -->
-		<link type = "text/css" rel = "stylesheet" href = "./formatting.css">
+		<title> Rocktaves | Oasis - 2012</title>
+		<link type = "text/css" rel = "stylesheet" href = "./format.css">
+		<link type = "text/css" rel = "stylesheet" href = "./animation.css">
+		<script type = "text/javascript" src = "./showContent.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script type = "text/javascript" src="./jQuery.js"></script>
 	</head>
-
-<!-- Body Begins -->
-<body onLoad = "showContentHolder(-1)">
-	
-	<!-- Wrapper Begins -->
-	<div class = "wrapper">
+<body>
+	<div class = "pageContainer">
 		
-		<!-- Title Bar Division -->
 		<div class = "titleBar">
 			<h1  id = "titleBanner">ROCKTAVES</h1>
 		</div>
 		
 		<div class = "clearDiv"></div>
 		
-		<!-- Navigation Bar Division -->
 		<nav class = "navColumn">
 			<ul class = "navBarList" type = "none">
-			<a href = "javascript: showContentHolder('contentHolderAbout')"><li id = "navElementAbout">About</li></a><br />
-			<a href = "javascript: showContentHolder('contentHolderRules')"><li id = "navElementRules">Rules</li></a><br />
-			<a href = "javascript: showContentHolder('contentHolderParticipate')"><li id = "navElementParticipate">Participate</li></a><br />
+			<a href = "#about" id = "navElementAbout"><li>About</li></a><br />
+			<a href = "#rules" id = "navElementRules"><li>Rules</li></a><br />
+			<a href = "#participate" id = "navElementParticipate"><li id =>Participate</li></a><br />
 			<a href = "http://www.bits-oasis.org/2012/" target = "_blank"><li id = "navElementOasis2012">Oasis 2012</li></a><br />
 			</ul>
 		</nav>
 		
-		<!-- Content Comlumn Division Begins -->
 		<div class = "contentColumn">
-		
-			<!-- About Category Content Holder Element -->
-			<div id = "contentHolderAbout">
-				<h1>ABOUT</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue vestibulum odio, id ornare magna tincidunt quis. Suspendisse ultricies consequat arcu, et euismod ipsum eleifend sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse viverra auctor ipsum, ut convallis sapien posuere ut. Suspendisse pretium turpis vel dolor pharetra sit amet adipiscing sem scelerisque. Nam condimentum placerat purus, in scelerisque lacus tristique eget. Nam lectus metus, ultrices tincidunt molestie at, mattis non lorem. Nunc nec enim sit amet lectus bibendum fermentum quis dapibus velit. Pellentesque convallis fermentum augue eget ultrices. Donec iaculis congue nisi vitae consequat. Vestibulum rhoncus, augue at porttitor vestibulum, mi nibh semper dolor, non vulputate nisi est sed elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod lectus non sapien euismod vel interdum neque gravida. Maecenas quis molestie nulla. Nullam id feugiat tellus.</p>
-				<p>Quisque quis risus mi, in mattis lorem. Proin ac justo id tortor dignissim pretium eu in mauris. Donec vestibulum sollicitudin tortor eu dictum. Donec vehicula ullamcorper ante, condimentum luctus metus mollis ut. Proin placerat, sapien dapibus lobortis viverra, nisl risus ornare sapien, id hendrerit mauris diam vel nisi. Sed enim lacus, mollis eget lobortis ut, adipiscing a sem. Proin tincidunt enim eget ipsum ullamcorper lobortis. Vestibulum suscipit sapien at est suscipit ultricies. Maecenas eget quam augue, sed lacinia urna. Quisque euismod metus eget orci varius rhoncus.</p>
-				<p>Suspendisse vitae ligula non neque ultrices dignissim volutpat sed libero. Nam facilisis malesuada nunc, quis vestibulum velit luctus non. Fusce velit nisl, convallis et luctus vitae, dictum nec turpis. Maecenas risus urna, auctor id dignissim et, porta ut metus. Donec ultrices odio magna, ac molestie eros. Aliquam odio nibh, posuere at feugiat vel, interdum sit amet orci. Integer varius nisi sed augue dictum in sagittis neque scelerisque. Nullam quis tincidunt libero.</p>
+			<div id = "about">
+				<h3>About</h3>
+				<!--Sample Data -->
+				<p>"The sudden rush of blood to your head wakes you up with a kick. The bright lights push you forward. The crazed crowd pulls you further. You look around yourself in a daze. You're on a stage that most others only dream of. This is Rocktaves 2011.</p>p>Rocktaves is the rock festival of BITS Pilani. It is without a doubt one of the most prestigious rock competitions in India. Rocktaves is a major event of the cultural festival Oasis, which also includes other events such as a solo guitar contest called Axetacy, and an acoustic unplugged event called Oasis Unplugged.</p><p>For decades, Rocktaves has enjoyed its lofty position as one of the most venerated of all platforms in the fairly nascent Indian rock scene. Its claims to fame are numerous. Rocktaves is in factresponsible for launching some of the biggest names in the Indian rock scene today: Parikrama, Prestorika, Them Clones, The Superfuzz and Euphoria are just some of those names.</p><p>You could be next.</p>
 			</div>
-			
-			<!-- Rules Category Content Holder Element -->
-			<div id = "contentHolderRules">
-				<h1>RULES</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue vestibulum odio, id ornare magna tincidunt quis. Suspendisse ultricies consequat arcu, et euismod ipsum eleifend sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse viverra auctor ipsum, ut convallis sapien posuere ut. Suspendisse pretium turpis vel dolor pharetra sit amet adipiscing sem scelerisque. Nam condimentum placerat purus, in scelerisque lacus tristique eget. Nam lectus metus, ultrices tincidunt molestie at, mattis non lorem. Nunc nec enim sit amet lectus bibendum fermentum quis dapibus velit. Pellentesque convallis fermentum augue eget ultrices. Donec iaculis congue nisi vitae consequat. Vestibulum rhoncus, augue at porttitor vestibulum, mi nibh semper dolor, non vulputate nisi est sed elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod lectus non sapien euismod vel interdum neque gravida. Maecenas quis molestie nulla. Nullam id feugiat tellus.</p>
-				<p>Quisque quis risus mi, in mattis lorem. Proin ac justo id tortor dignissim pretium eu in mauris. Donec vestibulum sollicitudin tortor eu dictum. Donec vehicula ullamcorper ante, condimentum luctus metus mollis ut. Proin placerat, sapien dapibus lobortis viverra, nisl risus ornare sapien, id hendrerit mauris diam vel nisi. Sed enim lacus, mollis eget lobortis ut, adipiscing a sem. Proin tincidunt enim eget ipsum ullamcorper lobortis. Vestibulum suscipit sapien at est suscipit ultricies. Maecenas eget quam augue, sed lacinia urna. Quisque euismod metus eget orci varius rhoncus.</p>
-				<p>Suspendisse vitae ligula non neque ultrices dignissim volutpat sed libero. Nam facilisis malesuada nunc, quis vestibulum velit luctus non. Fusce velit nisl, convallis et luctus vitae, dictum nec turpis. Maecenas risus urna, auctor id dignissim et, porta ut metus. Donec ultrices odio magna, ac molestie eros. Aliquam odio nibh, posuere at feugiat vel, interdum sit amet orci. Integer varius nisi sed augue dictum in sagittis neque scelerisque. Nullam quis tincidunt libero.</p>
+			<div id = "rules">
+				<h3>Rules</h3>
+				
+				<!--Sample Data -->
+				<ul>
+				<li>Bands need to send in their demo tapes (mp3's) (preferably 4 demos) and band profile. Youtube links can be added. There should be at least two self-compositions in the entry.</li>
+				<li>Deadline for submission is Sunday, 9th October 2011, 0000hrs </li>
+				<li>Short listed bands will be informed well in time about the prelims schedule and must report at least 24 hours before the scheduled time.</li>
+				<li>Professional sounds to handle the event. Drum kits will be provided </li>
+				<li>Professionals will judge the event </li>
+				<li>Bands will get 25 minutes on stage (including sound check).</li>
+				<li>FINAL decision regarding any matter lies in the hands of the organizers and judges and is absolutely binding.</li>
+				<li>No registration fees will be charged and accommodation will be provided.</li>
+				<li>Bands should mail in their entries to the email addresses below: (There should be at least two own compositions in the entry)</li>
+				<li>There will be NO language restrictions on the entries.</li>
+				<li>Any team violating ANY of the above rules is subject to direct elimination.</li>
+				<li>The selection of teams will be the sole discretion of BITS- PILANI</li>
+				<li>The decision of the organizers will be final and binding </li>
+				</ul>
+				
 			</div>
-			
-			<!-- Participate Category Content Holder Element -->
-			<div id = "contentHolderParticipate">
-				<h1>PARTICIPATE</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue vestibulum odio, id ornare magna tincidunt quis. Suspendisse ultricies consequat arcu, et euismod ipsum eleifend sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse viverra auctor ipsum, ut convallis sapien posuere ut. Suspendisse pretium turpis vel dolor pharetra sit amet adipiscing sem scelerisque. Nam condimentum placerat purus, in scelerisque lacus tristique eget. Nam lectus metus, ultrices tincidunt molestie at, mattis non lorem. Nunc nec enim sit amet lectus bibendum fermentum quis dapibus velit. Pellentesque convallis fermentum augue eget ultrices. Donec iaculis congue nisi vitae consequat. Vestibulum rhoncus, augue at porttitor vestibulum, mi nibh semper dolor, non vulputate nisi est sed elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod lectus non sapien euismod vel interdum neque gravida. Maecenas quis molestie nulla. Nullam id feugiat tellus.</p>
-				<p>Quisque quis risus mi, in mattis lorem. Proin ac justo id tortor dignissim pretium eu in mauris. Donec vestibulum sollicitudin tortor eu dictum. Donec vehicula ullamcorper ante, condimentum luctus metus mollis ut. Proin placerat, sapien dapibus lobortis viverra, nisl risus ornare sapien, id hendrerit mauris diam vel nisi. Sed enim lacus, mollis eget lobortis ut, adipiscing a sem. Proin tincidunt enim eget ipsum ullamcorper lobortis. Vestibulum suscipit sapien at est suscipit ultricies. Maecenas eget quam augue, sed lacinia urna. Quisque euismod metus eget orci varius rhoncus.</p>
-				<p>Suspendisse vitae ligula non neque ultrices dignissim volutpat sed libero. Nam facilisis malesuada nunc, quis vestibulum velit luctus non. Fusce velit nisl, convallis et luctus vitae, dictum nec turpis. Maecenas risus urna, auctor id dignissim et, porta ut metus. Donec ultrices odio magna, ac molestie eros. Aliquam odio nibh, posuere at feugiat vel, interdum sit amet orci. Integer varius nisi sed augue dictum in sagittis neque scelerisque. Nullam quis tincidunt libero.</p>
+			<div id = "participate">
+				<h3>Participate</h3>
+				<!--Sample Data -->
+				<ul>
+				<li>Bands need to send in their demos as attachments (preferably mp3's).</li>
+				<li>Bands need to send in least two original compositions.</li>
+				<li>A .pdf .doc file which has the band profile, contact details, past performances etc would be useful.</li>
+				<li>Links to the band's Facebook/Myspace page, youtube links of live performances, photographs, etc are encouraged.</li>
+				<li>Send in your entries to samarth@bits-oasis.org before 9th October 2011 0000 hrs.</li>
+				<li>Shortlisted bands will be invited to come and perform at Rocktaves, Oasis 2011, at BITS Pilani.</li>
+				</ul>
+				<p>For any queries contact<br/>Samarth Hegde<br/>samarth@bits-oasis.org<br/>+91-9571552557</p>
+				
+				
 			</div>
 		</div>
-		<!-- Content Column Division Ends -->
 		
 		<div class = "clearDiv"></div>
 		
-	</div>
-	<!-- Wrapper Ends -->
-	
-	<!-- Script for Animating Content Holder Elements -->
-	<script type = "text/javascript" src = "./showContentHolder.js"></script>
-
+	</div>		
 </body>
-<!-- Body Ends -->
 </html>
 <!-- Page Ends Here -->
