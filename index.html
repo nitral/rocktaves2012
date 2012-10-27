@@ -1,99 +1,101 @@
-<!-- Rocktaves | Oasis - 2012 -->
+<!-- -------------------
+Rocktaves | Oasis - 2012
+-------------------- -->
+
 <!DOCTYPE html>
 <html>
 	<head>
 		<title> Rocktaves | Oasis - 2012</title>
-		<link type = "text/css" rel = "stylesheet" href = "format.css">
-		<link type = "text/css" rel = "stylesheet" href = "animation.css">
+		<!-- CSS File Link for Formatting HTML Document. -->
+		<link type = "text/css" rel = "stylesheet" href = "formatting.css">
+		<!-- JS File for jQuery. -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-	<script type = "text/javascript" src = "stiny.js"></script>
 		<script type = "text/javascript" src = "jQuery.js"></script>
-<script src="tinyscrollbar.js"></script>
-		<script type = "text/javascript" src ="showContent.js"></script>
+		<script type = "text/javascript" src = "tinyscrollbar.js"></script>
+		<!-- Script for Animating Content Holder Elements -->
+		<script type = "text/javascript" src ="showContentHolder.js"></script>
 
-
-
-<style>
-/*!
- * jQuery uScrollbar
- * http://www.class.pm/projects/jquery
- *
- * Copyright 2011 - 2012 Class.PM www.class.pm
- * Written by Marius Stanciu - Sergiu <marius@picozu.net>
- * Licensed under the GPL Version 3 license.
- * Version 1.0.0
- *
-*/
-
-.scrollbar-path-vertical, .scrollbar-path-horizontal {
-    position: absolute;
-    background-color: #eee;
-    background-color: rgba(220,220,220,0.5); 
-    z-index: 100;
-}
-.scrollbar-path-horizontal {
-    bottom: 5px;
-    left: 0;
-    width: 100%;
-    height: 10px;
-}
-.scrollbar-path-vertical {
-    right: 5px; 
-    top: 0; 
-    height: 100%; 
-    width: 10px; 
-}
-.scrollbar-path-vertical {
-    box-shadow: inset 1px 0px 1 rgba(0,0,0,0.1);
-    -moz-box-shadow: inset 1px 0px 1 rgba(0,0,0,0.1);
-    -webkit-box-shadow: inset 1px 0px 0 rgba(0,0,0,0.1);
-}
-.scrollbar-path-horizontal {
-    box-shadow: inset 0px 1px 1 rgba(0,0,0,0.1);
-    -moz-box-shadow: inset 0px 1px 1 rgba(0,0,0,0.1);
-    -webkit-box-shadow: inset 0px 1px 0 rgba(0,0,0,0.1);
-}
-.scrollbar-handle{
-    position: relative;
-    top: 0;
-    left: 0;
-    background-color: #58eebc; 
-}
-.scrollbar-path-vertical .scrollbar-handle {
-    height: 20%;
-    width: 100%;
-}
-.scrollbar-path-horizontal .scrollbar-handle {
-    width: 20%;
-    height: 100%;
-}
-.scrollbar-path-vertical, .scrollbar-path-horizontal, .scrollbar-handle {
-    -moz-border-radius: 5px; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-
-.sample
-{
-margin:35px 40px;
-	width:550px;
-	height:285px;
-	overflow:hidden;
-position:relative;
-	text-align:justify;
-	padding:0 10px;
-	display: block;
-	font-family: "Tahoma", "Verdana";
-overflow:auto;
-}
-
-
-
-</style>
-
+		<!-- Stylesheet CSS Code for Scrollbar. -->
+		<style>
+			/*!
+			* jQuery uScrollbar
+			* http://www.class.pm/projects/jquery
+			*
+			* Copyright 2011 - 2012 Class.PM www.class.pm
+			* Written by Marius Stanciu - Sergiu <marius@picozu.net>
+			* Licensed under the GPL Version 3 license.
+			* Version 1.0.0
+			*
+			*/
+			
+			.scrollbar-path-vertical, .scrollbar-path-horizontal {
+				position: absolute;
+				background-color: #eee;
+				background-color: rgba(220,220,220,0.5); 
+				z-index: 100;
+			}
+			.scrollbar-path-horizontal {
+				bottom: 5px;
+				left: 0;
+				width: 100%;
+				height: 10px;
+			}
+			.scrollbar-path-vertical {
+				right: 5px; 
+				top: 0; 
+				height: 100%; 
+				width: 10px; 
+			}
+			.scrollbar-path-vertical {
+				box-shadow: inset 1px 0px 1 rgba(0,0,0,0.1);
+				-moz-box-shadow: inset 1px 0px 1 rgba(0,0,0,0.1);
+				-webkit-box-shadow: inset 1px 0px 0 rgba(0,0,0,0.1);
+			}
+			.scrollbar-path-horizontal {
+				box-shadow: inset 0px 1px 1 rgba(0,0,0,0.1);
+				-moz-box-shadow: inset 0px 1px 1 rgba(0,0,0,0.1);
+				-webkit-box-shadow: inset 0px 1px 0 rgba(0,0,0,0.1);
+			}
+			.scrollbar-handle{
+				position: relative;
+				top: 0;
+				left: 0;
+				background-color: #58eebc; 
+			}
+			.scrollbar-path-vertical .scrollbar-handle {
+				height: 20%;
+				width: 100%;
+			}
+			.scrollbar-path-horizontal .scrollbar-handle {
+				width: 20%;
+				height: 100%;
+			}
+			.scrollbar-path-vertical, .scrollbar-path-horizontal, .scrollbar-handle {
+				-moz-border-radius: 5px; 
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+			}
+			.sample
+			{
+				margin:35px 40px;
+				width:550px;
+				height:285px;
+				overflow:hidden;
+				position:relative;
+				text-align:justify;
+				padding:0 10px;
+				display: block;
+				font-family: "Tahoma", "Verdana";
+				overflow:auto;
+			}
+		</style>
 	</head>
+
+<!-- Body Begins -->
 <body>
-	<div class = "pageContainer">
+
+	<!-- Wrapper Begins -->
+	<div class = "wrapper">
 		
 		<div class = "titleBar">
 			<h1  id = "titleBanner">ROCKTAVES</h1>
@@ -103,17 +105,18 @@ overflow:auto;
 		
 		<nav class = "navColumn">
 			<ul class = "navBarList" type = "none">
-			<a href = "#about" id = "navElementAbout"><li>About</li></a><br />
-			<a href = "#rules" id = "navElementRules"><li>Rules</li></a><br />
-			<a href = "#participate" id = "navElementParticipate"><li id =>Participate</li></a><br />
-			<a href = "http://www.bits-oasis.org/2012/" target = "_blank"><li id = "navElementOasis2012">Oasis 2012</li></a><br />
+				<a href = "#contentHolderAbout" id = "navElementAbout"><li>About</li></a><br />
+				<a href = "#contentHolderRules" id = "navElementRules"><li>Rules</li></a><br />
+				<a href = "#contentHolderParticipate" id = "navElementParticipate"><li id =>Participate</li></a><br />
+				<a href = "http://www.bits-oasis.org/2012/" target = "_blank"><li id = "navElementOasis2012">Oasis 2012</li></a>
 			</ul>
 		</nav>
 		
-
-			<div id = "about" class='sample sample1'>
-  
-<h3>About</h3>
+		<!-- Content Comlumn Division Begins -->
+		<div class = "contentHolderColumn">
+			
+			<div id = "contentHolderAbout">
+				<h3>About</h3>
 				<p>
                 Rocktaves is the annual semi-professional rock festival of BITS Pilani.
                 It is without a doubt one of the most prestigious rock competitions in India.
@@ -126,10 +129,9 @@ overflow:auto;
                 Parikrama, Prestorika, Them Clones, The Superfuzz and Euphoria are just some of the footnotes in this epic musical odyssey.
                 It just might be your turn now...
                 </p>
-
-				
 			</div>
-			<div id = "rules" class='sample sample2'>
+			
+			<div id = "contentHolderRules">
 				<h3>Rules</h3>
                 <ul>
                 <li>Deadline for submission of entries is Friday, 12th October 2012, 23:59hrs.</li>
@@ -162,9 +164,9 @@ overflow:auto;
                 Adhwait Deshpande<br />
                 +91-8058-400-634
                 </p>
-				
 			</div>
-			<div id = "participate" class='sample sample3'>
+			
+			<div id = "contentHolderParticipate">
 				<h3>Participate</h3>
                 <ul>
                 <li>Bands need to send in their demos as attachments, to the e-mail address provided (preferably mp3s).</li>
@@ -190,9 +192,14 @@ overflow:auto;
                 </p>
 			</div>
 		
-		<div class = "clearDiv"></div>
+		</div>
+		<!-- Content Column Division Ends -->
 		
-	</div>		
+		<div class = "clearDiv"></div>
+
+	</div>
+	<!-- Wrapper Ends -->
 </body>
+<!-- Body Ends -->
 </html>
 <!-- Page Ends Here -->

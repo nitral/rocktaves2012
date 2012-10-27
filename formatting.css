@@ -1,0 +1,98 @@
+/* *********************
+Rocktaves | Oasis - 2012
+********************* */
+
+/* CSS File for formatting text and element attributes. */
+
+body
+{
+	background: #000000;
+    margin-top: 0;
+    margin-left: 0;
+	margin-right: 0;
+}
+
+@font-face
+{
+	font-family: Bebas;
+	src: url('./fonts/bebas.ttf');
+}
+
+a
+{
+	text-decoration: none;
+	color: #CA7620;
+}
+
+.wrapper
+{
+	background-image: url(./images/background.jpg);
+    width: 100%;
+	height: 640px;
+}
+	
+.titleBar
+{
+	float: left;
+	width: 80%;
+}
+
+#titleBanner
+{
+	text-indent:30px;
+	font-size: 45px;
+	font-family: "Bebas", "Arial Narrow Bold", "Arial Bold";
+	color: #CA7620;
+}
+
+.navColumn
+{
+	float: left;
+	width: 20%;
+}
+
+.navBarList
+{
+	text-transform:uppercase;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: "Bebas", "Arial Narrow Bold", "Arial Bold";
+}
+
+#navElementAbout:hover
+{
+	color: #ECBB86;
+}
+
+#navElementRules:hover
+{
+	color: #ECBB86;
+}
+
+#navElementParticipate:hover
+{
+	color: #ECBB86;
+}
+
+#navElementOasis2012:hover
+{
+	color: #ECBB86;
+}
+
+.contentHolderColumn
+{
+	width: 550px;
+	height: 285px;
+	overflow: auto;
+	text-align: justify;
+	display: inline-block;
+	font-family: "Bebas", "Tahoma", "Verdana";
+	color: #CA7620;
+}
+
+.clearDiv
+{
+	clear: both;
+}
+
+/* CSS File Ends */
