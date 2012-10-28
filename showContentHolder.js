@@ -7,24 +7,37 @@ Javascript for Showing Content Holder Elements.
 ******************************************** */
 
 // Function to Fade in and Hide concerned ContentHolders.
-function showContent(contentID) 
+function showContentHolder(contentID) 
 {
 	switch(contentID)
 	{
-	case 'a': //about
+	case 'about': //About
 		$("#contentHolderAbout").fadeIn();
-		$("#contentHolderRules").hide();
-		$("#contentHolderParticipate").hide();
+		$("#contentHolderAbout").show();
+		$("#contentHolderUnplugged").hide();
+		$("#contentHolderAxetacy").hide();
+		$("#contentHolderRocktavesCOM").hide();
 		break;
-	case 'b': //rules
-		$("#contentHolderRules").fadeIn();
+	case 'unplugged': //Unplugged
+		$("#contentHolderUnplugged").fadeIn();
+		$("#contentHolderUnplugged").show();
 		$("#contentHolderAbout").hide();
-		$("#contentHolderParticipate").hide();
+		$("#contentHolderAxetacy").hide();
+		$("#contentHolderRocktavesCOM").hide();
 		break;
-	case 'c': //participate
-	    $("#contentHolderParticipate").fadeIn();
+	case 'axetacy': //Axetacy
+	    $("#contentHolderAxetacy").fadeIn();
+		$("contentHolderAxetacy").show();
 	    $("#contentHolderAbout").hide();
-		$("#contentHolderRules").hide();
+		$("#contentHolderUnplugged").hide();
+		$("#contentHolderRocktavesCOM").hide();
+		break;
+	case 'rocktavesCom': //Rocktaves.com
+	    $("#contentHolderRocktavesCOM").fadeIn();
+		$("contentHolderRocktavesCOM").show();
+	    $("#contentHolderAbout").hide();
+		$("#contentHolderUnplugged").hide();
+		$("#contentHolderAxetacy").hide();
 		break;
 	}
 }

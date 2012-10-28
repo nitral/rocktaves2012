@@ -9,21 +9,28 @@ Javascript jQuery for Showing Content Holder Elements.
 // Function to detect a click and call showContent Function passing contentHolder ID.
 $(document).ready ( function(){
 	$("a#navElementAbout").click(function (){
-	showContent('a');
+	showContentHolder('about');
 	return false;
 	});
 });
 
 $(document).ready ( function(){
-	$("a#navElementRules").click(function (){
-	showContent('b');
+	$("a#navElementUnplugged").click(function (){
+	showContentHolder('unplugged');
 	return false;
 	});
 });
 
 $(document).ready ( function(){
-	$("a#navElementParticipate").click(function (){
-	showContent('c');
+	$("a#navElementAxetacy").click(function (){
+	showContentHolder('axetacy');
+	return false;
+	});
+});
+
+$(document).ready ( function(){
+	$("a#navElementRocktavesCOM").click(function (){
+	showContentHolder('rocktavesCom');
 	return false;
 	});
 });
