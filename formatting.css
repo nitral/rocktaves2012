@@ -24,6 +24,11 @@ a
 	color: #CA7620;
 }
 
+img
+{
+	border: 0;
+}
+
 .wrapper
 {
 	background-image: url(./images/background.jpg);
